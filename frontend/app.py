@@ -23,7 +23,7 @@ from visualization.annotator import Annotator
 pipeline = SafetyPipeline()
 annotator = Annotator()
 
-API_BASE_URL = "http://backend:8000/api/v1"
+API_BASE_URL = "https://mascot-tiny-reggae.ngrok-free.dev/api/v1"
 
 st.set_page_config(page_title="Human Safety Monitoring System", layout="wide")
 
