@@ -1,0 +1,30 @@
+# System Configuration for Human Safety Monitoring System
+
+models:
+  # Base person detection model
+  person_model: "models/yolov8s.pt"
+  
+  # Fine-tuned model for PPE (Helmet, Vest, Glasses)
+  # For demo purposes, if this doesn't exist, we will use a fallback logic in inference
+  ppe_model: "models/best.pt"
+
+tracking:
+  # Path to tracker configuration
+  tracker_config: "src/tracking/custom_bytetrack.yaml"
+  
+  # Minimum confidence for a detection to be tracked
+  conf_thresh: 0.25
+  
+  # IoU threshold for NMS
+  iou_thresh: 0.5
+
+inference:
+  # Target width for resizing inputs before processing (0 means original size)
+  target_size: 640
+  
+  # Device to use: 'cpu' or 'cuda:0'
+  device: "cpu"
+
+api:
+  host: "0.0.0.0"
+  port: 8000
