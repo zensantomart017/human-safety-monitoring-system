@@ -2,10 +2,11 @@ fastapi
 uvicorn
 streamlit
 requests
-opencv-python
+opencv-python-headless
 pillow
 numpy
 ultralytics
 torch
 torchvision
 python-multipart
+ngrok
