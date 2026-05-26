@@ -213,7 +213,7 @@ if uploaded_file is not None:
 
                 # --- FIX 4: Re-encode ke H.264 agar bisa diputar browser ---
                 st.info("Re-encoding ke H.264 untuk kompatibilitas browser...")
-                final_output_path = raw_output_path
+                final_output_path = reencode_to_h264(raw_output_path)
 
                 with col2:
                     st.subheader("Processed Video")
