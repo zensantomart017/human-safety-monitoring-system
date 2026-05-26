@@ -228,11 +228,6 @@ if uploaded_file is not None:
                         video_bytes = f.read()
                     st.video(video_bytes)
 
-                st.success(
-                    f"✅ Video Processing Complete! "
-                    f"({frame_count} frames processed)"
-                )
-
                 # Cleanup final file
                 try:
                     os.remove(final_output_path)
