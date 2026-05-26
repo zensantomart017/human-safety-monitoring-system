@@ -10,3 +10,4 @@ torch
 torchvision
 python-multipart
 ngrok
+lapx
