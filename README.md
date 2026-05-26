@@ -128,12 +128,17 @@ Monitoring Result
 
 # Teknologi yang Digunakan
 
-## Artificial Intelligence & Computer Vision
+## Computer Vision
 
 * YOLOv8s
 * ByteTrack
 * PyTorch
 * OpenCV
+
+## AI Usage for create code and debugging
+* ChatGPT
+* Claude Sonnet
+* Antigravity (Gemini-Flash(High))
 
 ## Backend
 
