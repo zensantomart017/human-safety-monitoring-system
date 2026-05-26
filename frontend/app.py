@@ -215,12 +215,6 @@ if uploaded_file is not None:
                 st.info("Re-encoding ke H.264 untuk kompatibilitas browser...")
                 final_output_path = raw_output_path
 
-                # Cleanup raw file
-                try:
-                    os.remove(raw_output_path)
-                except Exception:
-                    pass
-
                 with col2:
                     st.subheader("Processed Video")
                     # --- FIX 5: Baca sebagai bytes agar st.video() andal ---
